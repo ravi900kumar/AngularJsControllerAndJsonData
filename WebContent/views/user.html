@@ -1,0 +1,25 @@
+<h3>users Us Page</h3>
+{{usersmessage}}
+<br>
+
+<table border="2">
+
+<tr><td>pic</td>
+<td>userid</td>
+<td>fname</td>
+<td>lname</td>
+<td>mobile</td>
+<td>email</td>
+<td></td></tr>
+
+
+<tr ng-repeat="user in userlist">
+<td><img alt="" src="images/{{ user.pic }}" height="300px" width="300px"> </td>
+<td> {{ user.userid  }}</td>
+<td> {{ user.firstname }}</td>
+<td>{{ user.lastname }}</td>
+<td>{{ user.mobile }}</td>
+<td>{{ user.email }}</td>
+<td></td></tr>
+ 
+</table>
